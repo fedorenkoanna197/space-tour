@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+main {
+    height: 100%;
+    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+div img {
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    padding: 2% 0 0 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heder-hamburger-menu {
+    width: 5%;
+    display: none;
+}
+
+.img-header {
+    width: 4%;
+}
+
+.nav-bar .list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding-left: 1rem;
+    padding-right: 3rem;
+
+}
+
+.list .list-item a {
+    text-decoration: none;
+    height: auto;
+    color: #FFFFFF;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.3rem;
+    letter-spacing: 0.27rem;
+    font-weight: 400;
+}
+
+.list-item {
+    padding: 2rem 1rem;
+
+}
+
+.list-item-number {
+    font-weight: 700;
+
+}
+
+.nav-bar {
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+}
+
+.nav-bar-humburger {
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    width: 60%;
+    z-index: 10;
+    position: absolute;
+    left: 40%;
+    top: 0;
+    margin: 0;
+    display: none;
+}
+
+.nav-bar-humburger .list {
+    list-style: none;
+}
+
+.close {
+    width: 4%;
+    margin: 1rem 0 2rem 85%;
+}
+
+.line {
+    border-bottom: 0.1rem solid #FFFFFF;
+    width: 60%;
+    opacity: 0.25;
+    position: relative;
+    right: 57%;
+    top: 3rem;
+}
+
+.active {
+    padding-bottom: 2rem;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.hover {
+    padding-bottom: 2rem;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 1800px) and (max-width: 5500px) {
+    main {
+        height: 100vh;
+    }
+
+}
+
+@media screen and (min-width: 993px) and (max-width:1100px) {
+    header {
+        padding: 2% 0 0 3%;
+    }
+
+    .line {
+        width: 25%;
+        right: 22%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    header {
+        padding: 0 0 0 3%;
+    }
+
+    .img-header {
+        width: 6%;
+    }
+
+    .heder-hamburger-men {
+        display: none;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .list-item-number {
+        display: none;
+    }
+
+    .list .list-item a {
+
+        color: #FFFFFF;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 1rem;
+    }
+
+    .nav-bar .list {
+        padding-left: 1rem;
+        padding-right: 2rem;
+
+    }
+
+}
+
+@media screen and (min-width:360px) and (max-width: 767px) {
+
+    .img-header {
+        width: 10%;
+    }
+
+    header {
+        padding: 2% 8% 0 3%;
+        position: relative;
+
+    }
+
+    .heder-hamburger-menu {
+        display: inline-block;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .nav-bar-humburge {
+        display: inline-block;
+    }
+
+    .menue-active {
+        display: inline-block;
+
+    }
+
+    .menue-noactive {
+        display: none;
+    }
+
+}

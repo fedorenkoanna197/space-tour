@@ -1,0 +1,162 @@
+@import url("./globalStyle.css");
+
+main {
+    background-image: url("../assets/crew/background-crew-desktop.jpg");
+}
+
+.section-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4725rem;
+    margin: 6rem 0 0 8rem;
+}
+
+.section-title-number {
+    opacity: 0.25;
+    font-weight: 700;
+}
+
+.section-crew {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.crew-img {
+    margin-top: -5%;
+}
+
+.line-crew{
+    display: none;
+}
+
+.section-crew-info {
+    width: 45%;
+    margin: 4rem 6rem 0 5rem;
+}
+
+.crew-position,
+.crew-name {
+    font-family: 'Bellefair', serif;
+    color: rgba(255, 255, 255, 0.5);
+    text-transform: uppercase;
+    font-size: 2.2rem;
+}
+
+.crew-name {
+    color: #FFFFFF;
+    font-size: 3rem;
+}
+
+.crew-bio {
+    font-family: 'Barlow', sans-serif;
+    color: #D0D6F9;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.btn-slider {
+    display: inline-block;
+    padding: 0.4rem;
+    background-color: rgba(255, 255, 255, 0.17);
+    border-radius: 50%;
+    margin: 5rem 0.7rem 1.6rem 0;
+    transition: all .4s;
+}
+
+.active-slider {
+    background-color: #FFFFFF;
+}
+
+.hover-slider {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    main {
+        background-image: url("../assets/crew/background-crew-tablet.jpg");
+    }
+
+    .section-title {
+        margin: 6rem 0 0 2rem;
+    }
+
+    .section-crew {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .section-crew-info {
+        text-align: center;
+        width: 80%;
+    }
+
+    .crew-img {
+        margin: 0 auto;
+        width: 45%;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width: 767px) {
+    main {
+        background-image: url("../assets/crew/background-crew-mobile.jpg");
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        width: 100%;
+        margin: 6rem 0 0 0;
+        text-align: center;
+    }
+
+    .section-crew {
+        flex-direction: column-reverse;
+        margin: 0;
+    }
+
+    .section-crew-info {
+        text-align: center;
+        width: 80%;
+        margin: 0;
+    }
+
+    .crew-img {
+        margin: 5rem 0 0 0;
+        width: 45%;
+    }
+
+    .section-slider {
+        width: 100%;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .btn-slider {
+        margin: 3rem 0.7rem 3rem 0;
+    }
+
+    .crew-position{
+        font-size: 1.4rem;
+    }
+
+    .crew-name{
+        font-size: 1.8rem;
+    }
+
+    .crew-bio{
+        font-size: 1.3rem;
+        margin-bottom: 4rem;
+    }
+
+    .line-crew{
+        border-bottom: 1px solid #383B4B;
+        display: inline-block;
+        width: 80%;
+        margin: 0;
+    }
+}

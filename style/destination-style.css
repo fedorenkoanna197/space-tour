@@ -1,0 +1,240 @@
+@import url("./globalStyle.css");
+
+main {
+    background-image: url("../assets/destination/background-destination-desktop.jpg");
+}
+
+
+.section-title {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4725rem;
+    margin: 6rem 0 0 8rem;
+}
+
+.section-title-number {
+    opacity: 0.25;
+    font-weight: 700;
+}
+
+.planets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 8rem 3rem 0 8rem;
+}
+
+.planets-img {
+    width: 30%;
+    margin-right: 3rem;
+}
+
+.planets-info {
+    width: 50%;
+}
+
+.planets-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.planets-list .planets-item a {
+    text-decoration: none;
+    color: #D0D6F9;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    letter-spacing: 0.27rem;
+    padding: 0.5rem 0 0.5rem 0;
+    box-sizing: border-box;
+    transition: all .4s;
+}
+
+.planets-item {
+    padding-right: 1rem;
+    box-sizing: border-box;
+}
+
+.active-planets-item {
+    color: #FFFFFF !important;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.hover-planets-item {
+    border-bottom: 3px solid rgb(255, 255, 255, 0.5);
+}
+
+.title-planets {
+    font-family: 'Bellefair', serif;
+    color: #FFFFFF;
+    font-size: 8rem;
+    text-transform: uppercase;
+}
+
+.planets-description {
+    font-family: 'Barlow', sans-serif;
+    color: #D0D6F9;
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
+.planets-line {
+    border-bottom: 1px solid #383B4B;
+    margin: 3rem 0 1rem 0;
+}
+
+.distance-travel {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+.distance,
+.travel {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #D0D6F9;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-right: 8rem;
+    text-transform: uppercase;
+}
+
+.number,
+.travel-day {
+    text-transform: uppercase;
+    font-family: 'Bellefair', serif;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    main {
+        background-image: url("../assets/destination/background-destination-tablet.jpg");
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+        margin: 6rem 0 0 2rem;
+    }
+
+    .planets {
+        flex-direction: column;
+        align-items: center;
+        margin: 4rem 0 0 0;
+    }
+
+    .planets-img {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .planets-info {
+        width: 75%;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .planets-list {
+        width: 50%;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    .title-planets {
+        font-size: 6rem;
+        margin-top: 2rem;
+    }
+
+    .planets-description {
+        font-size: 1.2rem;
+    }
+
+    .distance-travel {
+        width: 100%;
+        justify-content: flex-end;
+        margin-left: 2rem;
+
+    }
+
+    .distance,
+    .travel {
+        font-size: 1.2rem;
+    }
+
+    .number,
+    .travel-day {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width: 767px) {
+    main {
+        background-image: url("../assets/destination/background-destination-mobile.jpg");
+    }
+
+    .section-title {
+        font-size: 0.7rem;
+        text-align: center;
+        width: 100%;
+        margin: 4rem 0 0 0;
+    }
+
+    .planets {
+        flex-direction: column;
+        align-items: center;
+        margin: 4rem 0 0 0;
+    }
+
+    .planets-img {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    .planets-info {
+        width: 80%;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .planets-list {
+        justify-content: space-evenly;
+    }
+
+    .planets-list .planets-item a{
+        font-size: 1.2rem;
+    }
+
+    .title-planets {
+        width: 100%;
+        font-size: 5rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .planets-description {
+        font-size: 1rem;
+    }
+
+    .distance-travel {
+        flex-direction: column;
+    }
+
+    .distance,
+    .travel {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .number,
+    .travel-day {
+        font-size: 1.5rem;
+    }
+}

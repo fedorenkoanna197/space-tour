@@ -1,0 +1,133 @@
+@import url("./globalStyle.css");
+
+.section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.section-text {
+    margin: 10% 0 0 5%;
+    width: 70%;
+}
+
+.section-text-travel {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 3rem;
+    color: #D0D6F9;
+    letter-spacing: 0.4725rem;
+}
+
+.section-text-space {
+    font-family: 'Bellefair', serif;
+    font-weight: 400;
+    font-size: 13rem;
+    color: #FFFFFF;
+}
+
+.section-text-other {
+    width: 70%;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    color: #D0D6F9;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.div-btn {
+    width: 15rem;
+    border-radius: 50%;
+    margin-top: 15rem;
+    margin-right: 10rem;
+}
+
+.section-btn {
+    background-color: #FFFFFF;
+    font-family: 'Bellefair', serif;
+    color: #0B0D17 !important;
+    padding: 5rem 1.5rem 5rem 1.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 50%;
+    transition: all 1s;
+    text-decoration: none;
+}
+
+.div-hover {
+    box-shadow: 0 0 0 5rem rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+
+    main {
+        background-image: url("../assets/home/background-home-mobile.jpg");
+    }
+
+    .section {
+        margin-top: 4rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-text {
+        width: 80%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .section-text-travel {
+        font-size: 2rem;
+    }
+
+    .section-text-space {
+        font-size: 12rem;
+    }
+
+    .section-text-other {
+        font-size: 1.6rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .div-btn {
+        margin: 4rem 0 10rem 0;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width: 767px) {
+    main {
+        background-image: url("../assets/home/background-home-tablet.jpg");
+    }
+
+    .section {
+        width: 100%;
+        margin-top: 4rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-text {
+        text-align: center;
+        margin: 0;
+    }
+
+    .section-text-travel {
+        font-size: 1rem;
+    }
+
+    .section-text-space {
+        font-size: 5rem;
+    }
+
+    .section-text-other {
+        font-size: 1.2rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .div-btn {
+        margin: 4rem 0 10rem 0;
+    }
+}
